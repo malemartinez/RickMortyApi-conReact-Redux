@@ -50,3 +50,9 @@ export const searchEpisode = (ValueInput)=>{
     payload: ValueInput,
   }
 }
+
+export const deleteSearchedEpisode = ()=>{
+  return {
+    type: ActionTypes.DELETE_SEARCHEDLIST,
+  }
+}

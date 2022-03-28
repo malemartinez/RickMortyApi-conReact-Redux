@@ -7,7 +7,7 @@ import Character from './Character';
 
 const Episodio = () => {
 
-  const episodeState = useSelector( state => state.allEpisodes.episode )
+  const episodeState = useSelector( state => state.allEpisodes.episode.episode )
   const dispatch = useDispatch();
   const {episodeId} = useParams();
   console.log(episodeId)

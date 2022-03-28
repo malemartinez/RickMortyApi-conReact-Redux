@@ -13,3 +13,8 @@ code {
 li{
   list-style: none;
 }
+
+.heartIcon::before{
+  content: '\f004';
+  color: rgb(122, 4, 4);
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setEpisodes } from '../redux/actions/episodeActions';
+import { deleteSearchedEpisode } from '../redux/actions/episodeActions';
 import EpisodeCard from './episodeCard';
 import Searcher from './Searcher';
 
@@ -16,13 +17,14 @@ const EpisodeListing = () => {
       const response = await data.json()
       dispatch(setEpisodes(response.results))
 
-      const respondenext = await fetch(response.info.next)
-      const response2 = await respondenext.json()
+      // const respondenext = await fetch(response.info.next)
+      // const response2 = await respondenext.json()
 
-      dispatch(setEpisodes(response2.results))
+      // dispatch(setEpisodes(response2.results))
   }
 
   useEffect(()=>{
+    if(searchedEpisodes.length > 0) dispatch(deleteSearchedEpisode())
     fetchData()
   },[])
 
@@ -37,7 +39,7 @@ const EpisodeListing = () => {
 
         { searchedEpisodes.length === 0 ?(
             episodes.map(item => (
-            <EpisodeCard key={item.id} episode = {item}/>
+            <EpisodeCard key={item.id} episode = {item}  />
               
           ))
         ):(

@@ -4,8 +4,9 @@ const initialState = {
   episodes: [],
   searchedEpisodes: [],
   episode: [],
-  likes: [],
-  favourites: []
+   likes: [],
+  favourites: [],
+
 };
 
 
@@ -18,10 +19,11 @@ export const episodeReducer = (state = initialState, {type , payload })=>{
       return {...state , episodes:nuevosEpisodios}
 
     case ActionTypes.SELECT_EPISODE:
-      return { ...state, episode: payload }
+      state.episode.episode = payload
+      return { ...state }
 
     case ActionTypes.ADD_FAVOURITE:
-      return { ...state , favourites: [...state.favourites, payload] }
+      return { ...state , favourites: [...state.favourites, payload],  }
 
     case ActionTypes.ADD_LIKE:
       console.log(state.likes)
@@ -30,8 +32,7 @@ export const episodeReducer = (state = initialState, {type , payload })=>{
     case ActionTypes.SEARCH_EPISODE:
 
       if ( !payload.length >= 1){
-        // state.searchedEpisodes = state.episodes;
-        return state 
+        return {...state , searchedEpisodes:state.episodes}
       }
       else {
         state.searchedEpisodes = state.episodes.filter( (episode) =>{
@@ -43,7 +44,9 @@ export const episodeReducer = (state = initialState, {type , payload })=>{
         } )
       }
       return {...state}
-
+    
+      case ActionTypes.DELETE_SEARCHEDLIST:
+        return {...state, searchedEpisodes: []}
 
     default:
       return state
