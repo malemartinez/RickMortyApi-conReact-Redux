@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RickMortyApi-conReact-Redux/static/css/main.d1cecdbf.css",
+    "main.js": "/RickMortyApi-conReact-Redux/static/js/main.0111198c.js",
+    "index.html": "/RickMortyApi-conReact-Redux/index.html",
+    "main.d1cecdbf.css.map": "/RickMortyApi-conReact-Redux/static/css/main.d1cecdbf.css.map",
+    "main.0111198c.js.map": "/RickMortyApi-conReact-Redux/static/js/main.0111198c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1cecdbf.css",
+    "static/js/main.0111198c.js"
+  ]
+}
