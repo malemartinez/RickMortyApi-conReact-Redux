@@ -16,8 +16,8 @@ const RoutesPages = () => {
             <Route path= "/personajes" element = {<CharacterList /> } />
             <Route path= "/episodios" element = { <EpisodeListing />}/>
             <Route path='/favoritos' element = {<Favorites/> }/>
-            <Route path='/' element = {"Elije un link del menú"}/>
-            <Route path="*" element={"No encontrada"} />
+            <Route path='/' element = {<EpisodeListing />}/>
+            {/* <Route path="*" element={"No encontrada"} /> */}
     </Routes>
    );
 }
