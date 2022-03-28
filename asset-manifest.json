@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/RickMortyApi-conReact-Redux/static/css/main.d1cecdbf.css",
-    "main.js": "/RickMortyApi-conReact-Redux/static/js/main.0111198c.js",
+    "main.js": "/RickMortyApi-conReact-Redux/static/js/main.e5792d5a.js",
     "index.html": "/RickMortyApi-conReact-Redux/index.html",
     "main.d1cecdbf.css.map": "/RickMortyApi-conReact-Redux/static/css/main.d1cecdbf.css.map",
-    "main.0111198c.js.map": "/RickMortyApi-conReact-Redux/static/js/main.0111198c.js.map"
+    "main.e5792d5a.js.map": "/RickMortyApi-conReact-Redux/static/js/main.e5792d5a.js.map"
   },
   "entrypoints": [
     "static/css/main.d1cecdbf.css",
-    "static/js/main.0111198c.js"
+    "static/js/main.e5792d5a.js"
   ]
 }
