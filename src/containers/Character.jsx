@@ -1,23 +1,17 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 import { useEffect } from 'react'
-
-import { useDispatch } from 'react-redux'
 
 
 const Character = ({url}) => {
 
 
   const [state , setState] = useState();
-  const { loading, setLoading} = useState(true)
-  // const { error, setError} = useState(false)
-
 
   const fetchData = async () => {
     const data = await fetch(`${url}`)
     const response = await data.json()
-    console.log(response)
+
     setState(response)
-    // setLoading(false)
     
   }
 

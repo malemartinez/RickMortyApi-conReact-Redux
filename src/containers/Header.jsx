@@ -8,9 +8,9 @@ const Header = () => {
 
     <nav className="navbar navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           Rick and Morty
-        </a>
+        </Link>
         <Link  className="navbar-brand " to="/episodios">Episodios</Link>
         <Link to="/personajes" className="navbar-brand " >Personajes</Link>
         <Link className="navbar-brand " to="/favoritos" >Favoritos</Link>
