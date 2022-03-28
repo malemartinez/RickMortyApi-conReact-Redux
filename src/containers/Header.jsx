@@ -5,15 +5,18 @@ import {
 
 const Header = () => {
   return ( 
-    <div className='d-flex justify-content-between'>
-      <h1>Rick and Morty</h1>
-      <div className="btn-group">
-              <Link to="/episodios" className="btn btn-dark">Episodios</Link>
-              <Link to="/personajes" className="btn btn-dark">Personajes</Link>
-              <Link to="/favoritos" className="btn btn-dark">Favoritos</Link>
-              {/* <NavLink to="/users" className="btn btn-dark" activeClassName="active">Users</NavLink> */}
-          </div>
-    </div>
+
+    <nav className="navbar navbar-dark bg-dark">
+      <div className="container">
+        <a className="navbar-brand" href="/">
+          Rick and Morty
+        </a>
+        <Link  className="navbar-brand " to="/episodios">Episodios</Link>
+        <Link to="/personajes" className="navbar-brand " >Personajes</Link>
+        <Link className="navbar-brand " to="/favoritos" >Favoritos</Link>
+      </div>
+    </nav>
+
    );
 }
  

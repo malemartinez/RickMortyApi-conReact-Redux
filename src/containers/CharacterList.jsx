@@ -16,10 +16,10 @@ const CharacterList = () => {
     const response = await data.json()
     dispatch(setCharacters(response.results))
     console.log(response)
-    const respondenext = await fetch(response.info.next)
-    const response2 = await respondenext.json()
-    console.log(response2)
-    dispatch(setCharacters(response2.results))
+    // const respondenext = await fetch(response.info.next)
+    // const response2 = await respondenext.json()
+    // console.log(response2)
+    // dispatch(setCharacters(response2.results))
 }
 
 useEffect(()=>{
@@ -31,7 +31,7 @@ useEffect(()=>{
               
               <div className="row">
 
-                <h3>Personajes</h3>
+                <h3 className='title-page'>Personajes</h3>
         
               {
                 characters.map(item => (

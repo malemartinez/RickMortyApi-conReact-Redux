@@ -34,7 +34,7 @@ const EpisodeListing = () => {
     <div className="container">
           
       <div className="row">
-        <h5>Episodios</h5>
+        <h4 className='title-page'>Episodios</h4>
         <Searcher/>
 
         { searchedEpisodes.length === 0 ?(

@@ -14,7 +14,6 @@ function App() {
       <Router>
         <div className="container  mt-5">
           <Header />
-          
           <hr />
           <RoutesPages />
         </div>

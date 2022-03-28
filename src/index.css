@@ -14,7 +14,48 @@ li{
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #1c3819;
+}
+.title-page{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.searcherContainer{
+  display: flex;
+  justify-content: center;
+}
+.searcherBox{
+  text-align: center;
+  width: 50%;
+  border: none;
+  outline:rgb(112, 112, 112) ;
+}
+::placeholder{
+  text-align: center;
+}
+
 .heartIcon::before{
-  content: '\f004';
   color: rgb(122, 4, 4);
+}
+.favoriteIcon::before{
+  color: black;
+}
+
+.iconsContainer{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.iconsContainer i{
+  font-size: 18px;
+  margin-left: 10px;
+  color: rgb(112, 112, 112);
+}
+.iconsContainer i:hover{
+  cursor: pointer;
+  color: black;
 }

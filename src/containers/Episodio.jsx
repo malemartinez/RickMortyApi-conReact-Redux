@@ -7,12 +7,9 @@ import Character from './Character';
 
 const Episodio = () => {
 
-  const episodeState = useSelector( state => state.allEpisodes.episode.episode )
+  const episodeState = useSelector( state => state.allEpisodes.episode )
   const dispatch = useDispatch();
   const {episodeId} = useParams();
-  console.log(episodeId)
-
-
 
   const fetchData = async () => {
       const data = await fetch(`https://rickandmortyapi.com/api/episode/${episodeId}`)
@@ -27,7 +24,6 @@ const Episodio = () => {
 
   console.log(episodeState)
 
-  // console.log(id)
   const {name , air_date , episode ,characters }= episodeState;
  
   return ( 

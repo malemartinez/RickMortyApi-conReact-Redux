@@ -16,10 +16,10 @@ const Searcher = () => {
   }
 
   return ( 
-    <div>
+    <div className='searcherContainer' >
       <input 
         value= {searchValue}
-        className='searchBox' type = 'text' placeholder='Nombre Episodio' 
+        className="shadow p-3 mb-5 rounded searcherBox" type = 'text' placeholder='Nombre Episodio' 
         onChange ={onSearchValueChange}
       />
     </div>

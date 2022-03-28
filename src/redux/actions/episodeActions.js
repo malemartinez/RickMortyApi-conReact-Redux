@@ -56,3 +56,4 @@ export const deleteSearchedEpisode = ()=>{
     type: ActionTypes.DELETE_SEARCHEDLIST,
   }
 }
+
